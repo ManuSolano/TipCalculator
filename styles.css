@@ -1,0 +1,246 @@
+body {
+    background-color:  #c5e4e7;
+    font-family: 'Space Mono';
+    height: auto;
+    margin: auto;
+    min-width: 0px;
+    text-align: left;
+  }
+  .wrap { 
+    display: flex;
+    justify-content: center;
+  }
+  #wrapper2 {
+    display: flex;    
+    flex-wrap: wrap;  
+  }
+  #wrapper2 > div {
+    flex: 1;          
+    min-width: 500px; 
+    border: 1px;
+  }
+  .titleBox{
+    position:relative;
+    float:center;
+    margin-top: 300px;
+    margin-bottom:50px;
+  }
+  p{
+      margin: 0px;
+  }
+  h{
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    color: #01464b;
+  }
+  h1{
+    font-size: 16px;
+    color: gray;
+    
+  }
+  h2{
+    font-size: 16px;    
+    color: white;
+  }
+  h3{
+    font-size: 16px;    
+    color: gray;
+  }
+  h5{
+    font-size: 10px;
+    color:white;
+}
+  .box{
+    margin: 0 auto;
+    background-color: white;
+    height: 400px;
+    width: 800px;
+    padding: 25px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.inputBox{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+}
+.resultBox{
+    left:50%;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.resultBox2{
+    margin: 0 auto;
+    background-color: #01464b;
+    height: 90%;
+    margin: 5%;
+    top: 50%;
+    border-radius: 15px;
+}
+.display{
+    position: relative;
+    top: 15%;
+    bottom:10px;
+    margin: 0 auto;
+    height: 80px;
+    width: 80%;
+}
+.number{
+    color: cyan;
+    position: absolute;
+    top: 25%;
+    left:60%;
+    transform: translateY(-50%);
+    font-size: 32px;  
+    text-align: right;
+
+}
+.reset{
+    background-color: #9fe8df;
+    color: #01464b;
+    position: absolute;
+    border: none;
+    bottom:50px;
+    left: 15%;
+    width:70%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.calculate{
+    background-color: #9fe8df;
+    color: #01464b;
+    position: absolute;
+    border: none;
+    bottom:50px;
+    left: 15%;
+    width:70%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.calculate:hover{
+    background: #27c2ac;
+}
+.reset:hover{
+    background: #27c2ac;
+}
+.text{
+    display: flex;
+    align-items: center;
+    padding: .375rem .75rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #01464b;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #f3f9fa;
+    border-radius: .25rem;
+}
+.hiddenText{
+    position:relative;
+    top:5px;
+    left:50px;
+
+}
+.textField{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #01464b;
+    background-color: #f3f9fa;
+    width: 340px;
+    background-clip: padding-box;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    
+}
+::placeholder {
+    color: gray;
+  }
+.custom{
+    color: #01464b;
+    position: relative;
+    top:-50px;
+    left: 225px;
+    height:50px;
+    width:100px;
+    margin:5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.btnGrid{
+    position: relative;
+    height: 40%;
+    width: 100%;
+    max-width:400px;
+    margin-top:-1%;
+    margin-bottom:1%;
+}
+.tipBtn{
+    background-color: #01464b;
+    color: white;
+    position: relative;
+    font-size: 20px;
+    border: none;
+    position: relative;
+    top:10px;
+    height:50px;
+    width:100px;
+    margin:5px;
+    margin-left: 0;
+    border-radius: 10px;
+}
+.tipBtn:hover{
+    background: #9fe8df;
+}
+.bold{
+    font-weight: bold;
+}
+.textInput{
+    text-align: right;
+}
+.icon{
+    opacity: 50%;
+    color: gray;
+    position: absolute;
+    top: 50%;
+    left:3%;
+    transform: translateY(-50%);
+
+}
+@media screen and (max-width: 700px) {
+    .box {
+    position: absolute;
+    margin-top:40%;
+    width:100%;
+    min-height:1000px;
+    max-height:1200px;
+   }
+   .inputBox{  
+    margin: 7.5%;
+    height:50%;
+    width:100%;
+    padding:5%;
+   }
+   .resultBox{
+    position:absolute;
+    top:75%;
+    left:0;
+    height:50%;
+    width:100%;
+}
+  }
