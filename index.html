@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
@@ -14,62 +14,63 @@
   <title>Tip calculator app</title>
 
 </head>
+
 <body onload="invisibility();">
+
   <div class="wrap">
     <div class="titleBox">
       <img src="./images/logo.svg"><img>
     </div>
     <div class="box">
-      <div class="wrapper2">
-        <div class="inputBox">
+      <div class="whiteFill" ></div>
+      <div class="inputBox">
+        <div class="input input-group mb-3">
+          <h1 class="bold">Bill</h1>
           <div class="input-group mb-3">
-            <h1>Bill</h1>
-            <div class="input-group mb-3">
-              <input type="text" class="textField textInput bold" id="bill">
-              <i class="fa fa-money icon"></i>
-            </div>
-          </div>
-          <h1>Select Tip %</h1>
-          <div class="btnGrid">
-            <button type="button" id="5" class=" btn bold tipBtn">5%</button>
-            <button type="button" id="10" class=" btn bold tipBtn">10%</button>
-            <button type="button" id="15" class=" btn bold tipBtn">15%</button>
-            <button type="button" id="25" class=" btn bold tipBtn">25%</button>
-            <button type="button" id="50" class=" btn bold tipBtn">50%</button>
-            <input type="text" id="custom" class="textField textInput bold custom" placeholder="Custom" onclick="clearBtns();">
-          </div>
-          <div class="input-group mb-3">
-            <h1>Number of people</h1>
-            <div class="hiddenText">
-              <h5 id="warning">Number cannot be zero</h5>
-            </div>
-            <div class="input-group mb-3">
-              <input type="text" class="textField textInput bold" id="people">
-              <i class="fa fa-user icon"></i>
-            </div>
+            <input type="text" class=" flex textField textInput bold dollar" id="bill">
+
           </div>
         </div>
-        <div class="resultBox">
-          <div class="resultBox2">
-            <div class="display">
-              <h2>Tip Amount</h2>
-              <h3>/ person</h3>
-              <div class="number bold" id="result"></div>
-            </div>
-            <div class="display">
-              <h2>Total</h2>
-              <h3>/ person</h3>
-              <div class="number bold" id="result2"></div>
-            </div>
-          </div>
-          <button type="button" id="calculate" class="btn calculate" onclick="calculator(); ">CALCULATE</button>
-          <button type="button" id="reset" class="btn reset" onclick="reset(); ">RESET</button>
+        <h1 class="bold">Select Tip %</h1>
+        <div class="btnGrid">
+          <button type="button" id="5" class=" btn bold tipBtn">5%</button>
+          <button type="button" id="10" class=" btn bold tipBtn">10%</button>
+          <button type="button" id="15" class=" btn bold tipBtn">15%</button>
+          <button type="button" id="25" class=" btn bold tipBtn">25%</button>
+          <button type="button" id="50" class=" btn bold tipBtn">50%</button>
+          <input type="custom" id="custom" class="textField textInput bold custom" placeholder="Custom"
+            onclick="clearBtns();">
         </div>
+        <div class="input input-group mb-3">
+          <h1 class="bold">Number of people</h1>
+          <div class="hiddenText">
+            <h5 id="warning">Number cannot be zero</h5>
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="flex textField textInput bold person" id="people">
+          </div>
+        </div>
+      </div>
+      <div class="resultBox">
+        <div class="resultBox2">
+          <div class="display">
+            <h2 >Tip Amount</h2>
+            <h3>/ person</h3>
+            <div class="number bold" id="result"></div>
+          </div>
+          <div class="display">
+            <h2>Total</h2>
+            <h3>/ person</h3>
+            <div class="number bold" id="result2"></div>
+          </div>
+        </div>
+        <button type="button" id="calculate" class="btn calculate" onclick="calculator(); ">CALCULATE</button>
+        <button type="button" id="reset" class="btn reset" onclick="reset(); ">RESET</button>
       </div>
     </div>
   </div>
-  </div>
-  </div>
+
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

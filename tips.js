@@ -16,14 +16,15 @@ function calculator() {
         }
         else if (y > 0) {
             
-            tip = (x * percentage).toFixed(2);
+            var tip = (x * percentage).toFixed(2);
             tipEach = (tip / y).toFixed(2);
+            if (tip>=1000 || tipEach>=1000){
+                document.getElementById("result").style.cssText  = "font-size: 20px; left: 50%";
+                document.getElementById("result2").style.cssText  = "font-size: 20px; left: 50%";
+            }
             document.getElementById("result").innerHTML = '$' + tip;
             document.getElementById("result2").innerHTML = '$' + tipEach;
 
-        }
-        if (percentage == .05) {
-            document.getElementById("5").style.backgroundColor = 'Red';
         }
         document.getElementById("calculate").style.display = "none";
         document.getElementById("reset").style.display = "inline";
@@ -59,14 +60,16 @@ var tipsTotal = tips.length;
 var keyPressed;
 txtField = document.getElementById("custom");
 for (var i = 0; i < tipsTotal; i++) {
-    tips[i].addEventListener("click", function () {
+   
+        tips[i].addEventListener("click", function () {
         keyPressed = getPercent(this.innerHTML);
+
         clearBtns(); 
         this.style.backgroundColor = "#27c2ac";
         txtField.value = null;
+        }
+    );
 
-    });
 }
-
 
 
