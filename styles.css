@@ -239,6 +239,10 @@
     left:0;
     background-color: white;
   }
+  .titleBox{
+    position:absolute;
+    top:3%;
+  }
 }
 @media screen and (min-width:642px) and (max-width: 800px) {
   .custom{
