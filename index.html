@@ -5,30 +5,25 @@
   <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Tip calculator app</title>
-
 </head>
 
 <body onload="invisibility();">
-
   <div class="wrap">
     <div class="titleBox">
       <img src="./images/logo.svg"><img>
     </div>
-    <div class="box">
-      <div class="whiteFill" ></div>
+    <div class="box vCenter">
+      <div class="whiteFill"></div>
       <div class="inputBox">
         <div class="input input-group mb-3">
           <h1 class="bold">Bill</h1>
           <div class="input-group mb-3">
             <input type="text" class=" flex textField textInput bold dollar" id="bill">
-
           </div>
         </div>
         <h1 class="bold">Select Tip %</h1>
@@ -43,34 +38,30 @@
         </div>
         <div class="input input-group mb-3">
           <h1 class="bold">Number of people</h1>
-          <div class="hiddenText">
-            <h5 id="warning">Number cannot be zero</h5>
-          </div>
+          <h5 class="hiddenText" id="warning">Number cannot be zero</h5>
           <div class="input-group mb-3">
             <input type="text" class="flex textField textInput bold person" id="people">
           </div>
         </div>
       </div>
-      <div class="resultBox">
-        <div class="resultBox2">
+      <div class="resultBox ">
+        <div class="resultBox2 vCenter">
           <div class="display">
-            <h2 >Tip Amount</h2>
-            <h3>/ person</h3>
-            <div class="number bold" id="result"></div>
+            <h2>Tip Amount</h2>
+            <h1>/ person</h1>
+            <div class="number vCenter bold" id="result"></div>
           </div>
           <div class="display">
             <h2>Total</h2>
-            <h3>/ person</h3>
-            <div class="number bold" id="result2"></div>
+            <h1>/ person</h1>
+            <div class="number vCenter bold" id="result2"></div>
           </div>
         </div>
-        <button type="button" id="calculate" class="btn calculate" onclick="calculator(); ">CALCULATE</button>
-        <button type="button" id="reset" class="btn reset" onclick="reset(); ">RESET</button>
+        <button type="button" id="calculate" class="btn bigBtn" onclick="calculator(); ">CALCULATE</button>
+        <button type="button" id="reset" class="btn bigBtn" onclick="reset(); ">RESET</button>
       </div>
     </div>
   </div>
-
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
