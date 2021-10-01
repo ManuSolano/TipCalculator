@@ -226,9 +226,6 @@
     left:170px;
     width: 150px;
   }
-  .icon{
-    left:10%;
-  }
   .tipBtn{
     width:150px;
   }
@@ -245,6 +242,15 @@
     top:3%;
   }
 }
+@media screen and (max-width: 600px) {
+  .custom{
+    left:170px;
+    width: 125px;
+  }
+  .tipBtn{
+    width:125px;
+  }
+} 
 @media screen and (min-width:642px) and (max-width: 800px) {
   .custom{
     left:340px;
