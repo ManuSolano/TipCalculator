@@ -222,14 +222,14 @@
     height:50%;
   }
   .custom{
-    left:180px;
-    width: 160px;
+    left:170px;
+    width: 150px;
   }
   .icon{
     left:10%;
   }
   .tipBtn{
-    width:160px;
+    width:150px;
   }
   .whiteFill{
     height:300px;
@@ -240,9 +240,9 @@
     background-color: white;
   }
 }
-@media screen and (min-width:681px) and (max-width: 800px) {
+@media screen and (min-width:642px) and (max-width: 800px) {
   .custom{
-    left:360px;
+    left:340px;
   }
 } 
 @media screen  and (min-width: 801px) {
