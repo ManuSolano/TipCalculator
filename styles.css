@@ -182,7 +182,7 @@
 .vCenter{
   transform: translateY(-50%);
 }
-@media screen  and (max-width: 800px) {
+@media screen  and (max-width: 750px) {
   .box{
     padding: 0px;
     min-height: 800px;
@@ -222,7 +222,7 @@
     height:50%;
   }
   .custom{
-    left:170px;
+    left:0px;
     width: 150px;
   }
   .tipBtn{
@@ -243,19 +243,24 @@
 }
 @media screen and (max-width: 600px) {
   .custom{
-    left:170px;
+    left:290px;
     width: 125px;
   }
   .tipBtn{
     width:125px;
   }
 } 
-@media screen and (min-width:642px) and (max-width: 800px) {
+@media screen and (max-width:487px) {
+  .custom{
+    left:145px;
+  }
+} 
+@media screen and (min-width:601px) and (max-width: 750px) {
   .custom{
     left:340px;
   }
 } 
-@media screen  and (min-width: 801px) {
+@media screen  and (min-width: 751px) {
   .resultBox{
     position:absolute;
     left:50%;
