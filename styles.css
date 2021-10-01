@@ -195,7 +195,7 @@
     position: relative;
     height:70%;
     width:100%;
-    padding: 8%;
+    padding: 5%;
   }
   .resultBox{
     position:relative;
@@ -204,7 +204,7 @@
     left:0;
     max-height:55%;
     width:95%;
-    padding: 3%;
+    padding: 0%;
   }
   .flex{
     margin: auto;
